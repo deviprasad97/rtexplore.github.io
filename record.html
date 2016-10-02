@@ -79,7 +79,7 @@
     <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script>
 </head>
 
-<body>
+<body onload="myFunction()">
     <article>
         <section class="experiment recordrtc">
             <h2 class="header">
@@ -100,11 +100,12 @@
 
                 <button id="rec">Start Recording</button>
                 <script>
-                    jQuery(function()
-                     {
-                    jQuery('#modal').click();
-                     });
+                    function myFunction() 
+                    {
+                       document.getElementById("modal").click();
+                    }
                 </script>
+                
             </h2>
 
             <div style="text-align: center; display: none;">
